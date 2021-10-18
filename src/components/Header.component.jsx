@@ -1,5 +1,8 @@
 import React, { useContext } from "react";
 import { datacontext } from "../dataContext";
+import {
+  Link
+} from "react-router-dom";
 
 export const Header = ({title}) => {
 
@@ -14,13 +17,15 @@ export const Header = ({title}) => {
           <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a className="navbar-brand" href="#">{title}</a>
+                    <Link to="/" className="navbar-brand" href="#">{title}</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link active" href="#">About</a>
+                    <Link to="/about" className="nav-link active" href="#">About</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Cart ({count})</a>
+                <button type="button" class="btn btn-info">
+                Cart <span class="badge badge-light">({count})</span>
+              </button>
                 </li>
             </ul>
             
