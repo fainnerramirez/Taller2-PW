@@ -6,6 +6,8 @@ export const GridProducts = () => {
         <div>
             <GridItems />
             <GridItems />
+            <GridItems />
+            <GridItems />
         </div>
     )
 }
