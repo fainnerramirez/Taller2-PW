@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { datacontext } from "../dataContext";
 
 export const Header = ({title}) => {
+
+  const {count} = useContext(datacontext);
 
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -17,7 +20,7 @@ export const Header = ({title}) => {
                     <a className="nav-link active" href="#">About</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Cart</a>
+                    <a className="nav-link" href="#">Cart ({count})</a>
                 </li>
             </ul>
             

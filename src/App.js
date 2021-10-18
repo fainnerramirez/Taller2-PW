@@ -2,13 +2,16 @@ import React from "react";
 import { Header } from "./components/Header.component";
 import { Productos } from "./components/Producto.component";
 import {GridProducts} from "./components/GridProducts.component";
+import { DataProvider } from "./dataContext";
 
 const App = () => {
   return (
    <div>
-      <Header title="Store"  />
-      <Productos title="STORE" description="This is store Page" />
-      <GridProducts />
+     <DataProvider>
+        <Header title="Store" />
+        <Productos title="STORE" description="This is store Page" />
+        <GridProducts />
+     </DataProvider>
    </div>
   );
 }
