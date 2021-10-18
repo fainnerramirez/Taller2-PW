@@ -3,7 +3,15 @@ import {GridItems} from "./GridItems.component";
 
 export const GridProducts = () => {
     return(
-        <div>
+        <div class="d-flex justify-content-center flex-wrap">
+            <GridItems />
+            <GridItems />
+            <GridItems />
+            <GridItems />
+            <GridItems />
+            <GridItems />
+            <GridItems />
+            <GridItems />
             <GridItems />
             <GridItems />
             <GridItems />
