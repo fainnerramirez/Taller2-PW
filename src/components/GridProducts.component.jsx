@@ -3,6 +3,9 @@ import {GridItems} from "./GridItems.component";
 
 export const GridProducts = () => {
     return(
-        <GridItems />
+        <div>
+            <GridItems />
+            <GridItems />
+        </div>
     )
 }
