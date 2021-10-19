@@ -1,17 +1,11 @@
 import React from "react";
-import { Header } from "./components/Header.component";
-import { Productos } from "./components/Producto.component";
-import {GridProducts} from "./components/GridProducts.component";
-import { DataProvider } from "./dataContext";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
 import { Home } from "./components/Home.component";
 import { About } from "./components/About.component";
+import { NotFound404 } from "./components/NotFound404.component";
+import { DataProvider } from "./providers/DataContext";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-const App = () => {
+export const App = () => {
   return (
    <div>
      <DataProvider>   
@@ -23,11 +17,12 @@ const App = () => {
             <Route exact path="/about">
               <About />
             </Route>
+            <Route path="*">
+              <NotFound404 />
+            </Route>
         </Switch>
       </Router>
      </DataProvider>
    </div>
   );
 }
-
-export default App;

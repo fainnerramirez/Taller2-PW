@@ -5,9 +5,9 @@ export const About = () => {
     return(
        <div>
             <Header title="Store" /> 
-            <h1>
-                Esta app es creada por <span class="text-danger">Fainner Ramirez</span> y <span class="text-success">Carlos Borrego</span>
-            </h1>
+            <h3 className="text-center mt-5">
+                En la creación de la interfaz colaboraron <br /> <span className="text-danger">Fainner Ramirez</span> & <span className="text-success">Carlos Borrego</span>
+            </h3>
        </div>
     )
 }

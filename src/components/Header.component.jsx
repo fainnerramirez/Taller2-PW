@@ -1,12 +1,10 @@
 import React, { useContext } from "react";
-import { datacontext } from "../dataContext";
-import {
-  Link
-} from "react-router-dom";
+import { Datacontext } from "../providers/DataContext";
+import { Link } from "react-router-dom";
 
 export const Header = ({title}) => {
 
-  const {count} = useContext(datacontext);
+  const {count} = useContext(Datacontext);
 
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -16,15 +14,15 @@ export const Header = ({title}) => {
           </button>
           <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul className="navbar-nav">
-                <li className="nav-item">
-                    <Link to="/" className="navbar-brand" href="#">{title}</Link>
+                <li className="nav-item" style={{fontSize: "17px"}}>
+                    <Link to="/" className="nav-link active" href="#">{title}</Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" style={{fontSize: "17px"}}>
                     <Link to="/about" className="nav-link active" href="#">About</Link>
                 </li>
                 <li className="nav-item">
                 <button type="button" class="btn btn-info">
-                Cart <span class="badge badge-light">({count})</span>
+                Cart <span class="badge badge-light" style={{fontSize: "15px"}}>({count})</span>
               </button>
                 </li>
             </ul>

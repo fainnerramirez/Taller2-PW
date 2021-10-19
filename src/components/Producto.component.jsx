@@ -4,9 +4,9 @@ import React from "react";
 
 export const Productos = ({title , description}) => {
     return(
-        <div class="text-center mt-5">
+        <div className="text-center mt-5">
             <h1>{title}</h1>
-            <span>{description}</span>
+            <span className="lead">{description}</span>
         </div>
     )
 }
