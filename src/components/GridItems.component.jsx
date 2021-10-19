@@ -16,8 +16,8 @@ export const GridItems = () => {
             <div className="card-body">
                 <h5 className="card-title">Producto title</h5>
                 <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-warning m-3">DETAILS</a>
-                <a href="#" className="btn btn-primary" onClick={(e) => handleCoutCart(e)}>ADD TO CART</a>
+                <button  className="btn btn-warning m-3">DETAILS</button>
+                <button className="btn btn-primary" onClick={(e) => handleCoutCart(e)}>ADD TO CART</button>
             </div>
         </div>
     )
