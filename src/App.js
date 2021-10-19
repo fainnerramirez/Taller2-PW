@@ -11,15 +11,9 @@ export const App = () => {
      <DataProvider>   
       <Router>
         <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route path="*">
-              <NotFound404 />
-            </Route>
+            <Route exact path="/" component={ Home } />
+            <Route exact path="/about" component={ About } />
+            <Route path="*" component={ NotFound404 } />
         </Switch>
       </Router>
      </DataProvider>
