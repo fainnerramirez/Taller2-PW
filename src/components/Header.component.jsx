@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { Datacontext } from "../providers/DataContext";
 import { Link } from "react-router-dom";
 
-export const Header = ({title}) => {
+export const Header = ({ title }) => {
 
-  const {count} = useContext(Datacontext);
+  const { count } = useContext(Datacontext);
 
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">

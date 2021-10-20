@@ -1,7 +1,5 @@
 import React from "react";
 
-//margin: margin-top !margin-bottom ! margin-left ! margin-right
-
 export const Productos = ({title , description}) => {
     return(
         <div className="text-center" style={{marginTop: "100px"}}>
